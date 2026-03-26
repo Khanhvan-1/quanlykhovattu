@@ -1,4 +1,4 @@
-# 📦 Quản Lý Kho Vật Tư
+#  Quản Lý Kho Vật Tư
 
 Ứng dụng Android hỗ trợ **quản lý kho vật tư** với các chức năng như:
 - Quản lý sản phẩm
@@ -11,26 +11,26 @@
 
 ---
 
-## 🚀 Công nghệ sử dụng
+##  Công nghệ sử dụng
 
-### 📱 Android
+###  Android
 - Java
 - Android Studio
 - RecyclerView
 - BottomSheetDialog
 - MPAndroidChart (Biểu đồ thống kê)
 
-### 🌐 Backend
+###  Backend
 - Node.js
 - Express.js
 - REST API
 
-### 🗄️ Database
+###  Database
 - MySQL
 
 ---
 
-## 📂 Cấu trúc project
+##  Cấu trúc project
 
 ```bash
 app/        # Ứng dụng Android
