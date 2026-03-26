@@ -1,6 +1,5 @@
 package com.example.khovattu;
 
-import static android.os.Build.VERSION_CODES_FULL.R;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
