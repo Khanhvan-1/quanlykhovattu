@@ -26,9 +26,8 @@
 - REST API
 
 ###  Database
-- MySQL
+- MongoDB Compasss
 
----
 
 ##  Cấu trúc project
 
