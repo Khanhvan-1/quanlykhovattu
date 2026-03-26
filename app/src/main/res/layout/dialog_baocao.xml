@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_popup">
+
+    <TextView
+        android:text="Chọn loại báo cáo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnBaoCaoTaiChinh"
+        android:text=" Báo cáo tài chính"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastel_blue"
+        android:drawableStart="@drawable/ic_financial_report"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnBaoCaoTonKho"
+        android:text=" Báo cáo tồn kho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastel_purple"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_inventory_report"/>
+</LinearLayout>

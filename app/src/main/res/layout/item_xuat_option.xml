@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Sản phẩm -->
+    <include layout="@layout/option_row"
+        android:id="@+id/rowSanPham"
+        android:tag="Sản phẩm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Khách hàng -->
+    <include layout="@layout/option_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowKhachHang"
+        android:tag="Khách hàng (Không bắt buộc)" />
+
+    <!-- Phương thức thanh toán -->
+    <include layout="@layout/option_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowThanhToan"
+        android:tag="Phương thức thanh toán (Không bắt buộc)" />
+
+    <!-- Phí thêm -->
+    <include layout="@layout/option_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowPhiThem"
+        android:tag="Phí thêm" />
+
+    <!-- Giảm giá -->
+    <include layout="@layout/option_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowGiamGia"
+        android:tag="Giảm giá" />
+
+    <!-- Ghi chú -->
+    <include layout="@layout/option_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowGhiChu"
+        android:tag="Thêm ghi chú" />
+</LinearLayout>

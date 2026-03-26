@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Bộ lọc nâng cao"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ==================== GIÁ ==================== -->
+    <TextView
+        android:text="Giá nhập (VNĐ)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtGiaMin"
+            android:hint="Từ"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_card_light"
+            android:padding="10dp"/>
+
+        <View android:layout_width="8dp" android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/edtGiaMax"
+            android:hint="Đến"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_light"
+            android:layout_height="45dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <!-- ==================== TỒN KHO ==================== -->
+    <TextView
+        android:text="Tồn kho"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTonMin"
+            android:hint="Từ"
+            android:inputType="number"
+            android:background="@drawable/bg_card_light"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+
+        <View android:layout_width="8dp" android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/edtTonMax"
+            android:hint="Đến"
+            android:inputType="number"
+            android:background="@drawable/bg_card_light"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+    <!-- ==================== LOẠI HÀNG ==================== -->
+    <TextView
+        android:text="Loại hàng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"/>
+
+    <Spinner
+        android:id="@+id/spLoaiPopup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_card_light"/>
+
+    <!-- ==================== BỘ LỌC NGÀY (MỚI) ==================== -->
+    <TextView
+        android:text="Lọc theo ngày"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtDateFrom"
+            android:hint="Từ ngày"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/bg_card_light"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+
+        <View android:layout_width="8dp" android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/edtDateTo"
+            android:hint="Đến ngày"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/bg_card_light"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+    <!-- Nút -->
+    <Button
+        android:id="@+id/btnApDungFilter"
+        android:text="Áp dụng"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue_700"/>
+
+    <Button
+        android:id="@+id/btnXoaFilter"
+        android:text="Xóa bộ lọc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/design_default_color_error"/>
+</LinearLayout>

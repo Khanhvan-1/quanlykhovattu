@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LichSuActivity">
+
+    <ImageView
+        android:src="@drawable/lichsu"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 🧭 Lớp phủ làm mờ nhẹ để chữ nổi hơn -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCFFFFFF" />
+
+    <!-- 📜 Nội dung chính -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Tiêu đề -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pastel_blue"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Lịch sử"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/ic_list"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <!-- Bộ lọc -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="end">
+
+            <ImageView
+                android:src="@drawable/ic_menu"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:text="Bộ lọc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Danh sách lịch sử -->
+        <ListView
+            android:id="@+id/lvLichSu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:padding="8dp"
+            android:background="@android:color/transparent" />
+
+        <!-- Thanh điều hướng -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/menu_bottom_nav" />
+    </LinearLayout>
+
+</RelativeLayout>

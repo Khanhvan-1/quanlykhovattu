@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- TAB LỌC NHÂN VIÊN -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/purple_500"
+        app:tabSelectedTextColor="@color/purple_500"
+        app:tabTextColor="@color/black"
+        android:elevation="4dp"/>
+
+    <!-- DANH SÁCH NHÂN VIÊN -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:padding="8dp" />
+
+    <!-- NÚT THÊM NHÂN VIÊN -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Thêm nhân viên"
+        app:srcCompat="@drawable/ic_plus"
+        android:backgroundTint="@color/pastel_blue" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trangchu"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        android:paddingTop="4dp">
+
+        <!-- 🌸 Thanh tiêu đề -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pastel_blue"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:elevation="6dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:text="Báo cáo tài chính"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/ic_loinhuan"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+
+        <!-- 🌸 Chọn ngày -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="12dp">
+
+            <EditText
+                android:id="@+id/edtFromDate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:hint="Từ ngày"
+                android:background="@drawable/bg_card_light"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/edtToDate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:hint="Đến ngày"
+                android:background="@drawable/bg_card_light"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnLoc"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:text="Lọc"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <!-- 🌸 Nút Xuất Excel -->
+        <Button
+            android:id="@+id/btnExportExcel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="📄 Xuất Excel"
+            android:backgroundTint="@color/pastel_purple"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+
+        <!-- 🌸 Tổng quan Doanh thu / Chi phí -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_light"
+            android:elevation="6dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:clipToOutline="true"
+            android:backgroundTint="@color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Doanh thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvDoanhThu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 ₫"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pastel_blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/blue_400" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Chi phí"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvChiPhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 ₫"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pastel_purple" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 🌸 BUTTON Refresh -->
+        <Button
+            android:id="@+id/btnRefresh"
+            android:text="🔄 Làm mới dữ liệu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/pastel_blue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:elevation="5dp" />
+
+
+        <!-- 🌸 Biểu đồ cột -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_light"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:clipToOutline="true"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:text="Doanh thu vs Chi phí"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChartDoanhThuChiPhi"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+
+
+        <!-- 🌸 Pie Chart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_light"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:clipToOutline="true"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:text="Tỷ lệ tài chính"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+
+
+        <!-- 🌸 Line Chart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_light"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:clipToOutline="true"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:text="Tình hình Nhập / Xuất kho"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChartNhapXuat"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

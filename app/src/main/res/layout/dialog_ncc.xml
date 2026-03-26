@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_button_light"
+    >
+
+    <EditText
+        android:id="@+id/edtTenNCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên nhà cung cấp"
+        android:padding="14dp"
+        android:background="@drawable/bg_input"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edtSdtNCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:padding="14dp"
+        android:background="@drawable/bg_input"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edtDiaChiNCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Địa chỉ"
+        android:padding="14dp"
+        android:background="@drawable/bg_input"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnCancelNCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:text="Hủy"/>
+
+        <Button
+            android:id="@+id/btnSaveNCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:backgroundTint="@color/blue_700"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Quản lý kho và vật tư</string>
+    <string name="nhap_kho">Nhập kho</string>
+    <string name="xuat_kho">Xuất kho</string>
+    <string name="so_luong_xuat_kho">Số lượng xuất kho</string>
+    <string name="gia_le">Giá lẻ</string>
+    <string name="gia_ban">Giá bán</string>
+    <string name="huy">Hủy</string>
+    <string name="gui">Gửi</string>
+    <string name="tai_khoan">Tài khoản</string>
+    <string name="ten_nguoi_dung">Tên người dùng</string>
+    <string name="dang_xuat">Đăng xuất</string>
+    <string name="ma_san_pham">Mã sản phẩm</string>
+    <string name="ten_san_pham">Tên sản phẩm</string>
+    <string name="luu">Lưu</string>
+    <string name="chon">Chọn</string>
+    <string name="tuy_chon">Tùy chọn</string>
+
+    <string-array name="gender_array">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </string-array>
+
+    <string-array name="chucvu_array">
+        <item>admin</item>
+        <item>nhap_kho</item>
+        <item>xuat_kho</item>
+    </string-array>
+
+
+</resources>

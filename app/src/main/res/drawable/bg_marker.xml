@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 🌈 Gradient nền -->
+    <gradient
+        android:startColor="#FF6F61" android:endColor="#FF9A8B" android:angle="90" />
+
+    <!-- Bo góc -->
+    <corners android:radius="12dp" />
+
+    <!-- Bóng đổ nhẹ -->
+    <padding android:left="8dp" android:right="8dp" android:top="6dp" android:bottom="6dp" />
+    <solid android:color="@android:color/transparent" />
+</shape>

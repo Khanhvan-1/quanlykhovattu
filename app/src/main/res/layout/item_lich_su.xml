@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardLichSu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="6dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="12dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:backgroundTint="@android:color/white"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/imgLoaiPhieu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@id/tvLoaiPhieu"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/tvLoaiPhieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLoaiPhieu"
+            android:layout_marginStart="12dp"
+            android:text="Nhập kho"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <!-- Tên sản phẩm -->
+        <TextView
+            android:id="@+id/tvTenSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLoaiPhieu"
+            android:layout_below="@id/tvLoaiPhieu"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Ống nhựa PVC"
+            android:textColor="@color/darker_gray"
+            android:textSize="14sp" />
+
+        <!-- Người thực hiện -->
+        <TextView
+            android:id="@+id/tvNguoiThucHien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLoaiPhieu"
+            android:layout_below="@id/tvTenSP"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:text="👤 Duyên – Nhập kho"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- Thời gian -->
+        <TextView
+            android:id="@+id/tvThoiGian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgLoaiPhieu"
+            android:layout_below="@id/tvNguoiThucHien"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="08/11/2025 12:20"
+            android:textColor="@color/purple_700"
+            android:textSize="12sp" />
+
+        <!-- Số lượng -->
+        <TextView
+            android:id="@+id/tvSoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="+5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/green_success" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

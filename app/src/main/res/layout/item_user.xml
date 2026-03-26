@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_card"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_person"
+        android:background="@drawable/bg_circle"
+        android:padding="8dp"
+        app:tint="@color/blue_700" />
+
+    <!-- Thông tin -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvTenUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvEmailUser"
+            android:text="user@gmail.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_700"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvRoleUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quyền: User"
+            android:textColor="@color/purple_700"
+            android:textSize="13sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <!-- Nút thao tác -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:background="@drawable/bg_button_light"
+            android:textColor="@color/purple_700"
+            android:padding="6dp"
+            android:textSize="13sp"
+            android:layout_marginEnd="6dp"/>
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:background="@drawable/bg_button_red"
+            android:textColor="@color/white"
+            android:padding="6dp"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>

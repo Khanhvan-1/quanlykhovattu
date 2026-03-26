@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Thùng -->
+    <path
+        android:fillColor="#FFAB91"
+        android:pathData="M3,7l9,-4l9,4v10a2,2 0 0,1 -2,2H5a2,2 0 0,1 -2,-2V7zM12,3l7,3.11V8l-7,-3l-7,3V6.11L12,3z" />
+    <!-- Mũi tên xuất -->
+    <path
+        android:fillColor="#D84315"
+        android:pathData="M12,13v6h2v-4h2l-3,-3l-3,3h2z" />
+</vector>

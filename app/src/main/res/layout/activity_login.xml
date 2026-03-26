@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🌆 Hình nền thành phố -->
+    <ImageView
+        android:src="@drawable/thanhpho"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Lớp phủ màu pastel mờ -->
+    <View
+        android:background="#B3FFD6D6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Nội dung đăng nhập -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Logo H&A -->
+            <ImageView
+                android:src="@drawable/logo_login"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Logo" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/edtEmail"
+                android:hint="Email"
+                android:drawableStart="@drawable/ic_email"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Mật khẩu -->
+            <EditText
+                android:id="@+id/edtPass"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_lock"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Nút Đăng nhập -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="Đăng nhập"
+                android:backgroundTint="@color/pastel_red"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Nút chuyển sang đăng ký -->
+            <Button
+                android:id="@+id/btnToRegister"
+                android:text="Chưa có tài khoản? Đăng ký"
+                android:backgroundTint="@color/pastel_purple"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

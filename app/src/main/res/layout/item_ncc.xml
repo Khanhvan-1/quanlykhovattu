@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp"
+    android:background="@drawable/bg_item_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTenNCC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tên NCC"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#333" />
+
+            <ImageButton
+                android:id="@+id/btnEditNCC"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_edit_red"
+                android:padding="4dp"/>
+
+            <ImageButton
+                android:id="@+id/btnDeleteNCC"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_delete_purple"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSdtNCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SĐT: ..."
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/blue_700"/>
+
+        <TextView
+            android:id="@+id/tvDiaChiNCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: ..."
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/red_300"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

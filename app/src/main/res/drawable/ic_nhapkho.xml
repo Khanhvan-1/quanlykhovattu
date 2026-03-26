@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Thân xe -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M3,11h11v5h-2a2,2 0 0,0 -2,2v2H7v-2a2,2 0 0,0 -2,-2H3v-5zM16,11h3l2,3v2h-5v-5z" />
+    <!-- Bánh xe -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M5,18a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0zM17,18a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0z" />
+    <!-- Mũi tên nhập -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M12,2v6h-2V4H8l4,-4l4,4h-2v4h-2V2z" />
+</vector>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Trang chủ" />
+
+    <item
+        android:id="@+id/nav_nhapkho"
+        android:icon="@drawable/ic_nhapkho"
+        android:title="Nhập kho" />
+
+    <item
+        android:id="@+id/nav_xuatkho"
+        android:icon="@drawable/ic_xuatkho"
+        android:title="Xuất kho" />
+
+
+    <item
+        android:id="@+id/nav_sanpham"
+        android:icon="@drawable/ic_box"
+        android:title="Sản phẩm" />
+
+    <item
+        android:id="@+id/nav_lichsu"
+        android:icon="@drawable/ic_history"
+        android:title="Lịch sử" />
+
+    <item
+        android:id="@+id/nav_khac"
+        android:icon="@drawable/ic_menu"
+        android:title="Khác" />
+
+</menu>

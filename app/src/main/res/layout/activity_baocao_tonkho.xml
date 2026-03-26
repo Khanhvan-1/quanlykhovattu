@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trangchu"
+    android:padding="8dp">
+
+    <!-- 🔹 Thanh tiêu đề -->
+    <LinearLayout
+        android:id="@+id/headerTonKho"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/pastel_blue"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <!-- Nút quay lại -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button_light"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Quay lại"
+            app:tint="@android:color/black" />
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvTitleTonKho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Báo cáo tồn kho"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- 🔹 Danh sách sản phẩm tồn kho -->
+    <ListView
+        android:id="@+id/lvTonKho"
+        android:layout_below="@id/headerTonKho"
+        android:layout_above="@id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- 🔹 Thanh menu dưới (nếu có dùng) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="8dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu_bottom_nav" />
+
+</RelativeLayout>

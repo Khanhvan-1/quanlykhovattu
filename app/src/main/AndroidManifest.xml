@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ⚙️ Quyền truy cập -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- ❌ KHÔNG CẦN - Android 10+ không cho dùng WRITE_EXTERNAL_STORAGE
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    -->
+
+    <!-- Nếu thiết bị không có SIM vẫn chạy app -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Khovattu"
+        tools:targetApi="31">
+
+        <!-- 🚀 Màn hình khởi động -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 🔹 Các màn hình -->
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BaoCaoTaiChinhActivity" />
+        <activity android:name=".ChonSanPhamActivity" />
+        <activity android:name=".ThemSanPhamActivity" />
+        <activity android:name=".ThemKhachHangActivity" />
+        <activity android:name=".KhachHangActivity" />
+        <activity android:name=".LichSuActivity" />
+        <activity android:name=".MenuKhacActivity" />
+        <activity android:name=".NhapKhoActivity" />
+        <activity android:name=".XuatKhoActivity" />
+        <activity android:name=".SanPhamActivity" />
+        <activity android:name=".TonKhoActivity" />
+        <activity android:name=".CaiDatActivity" />
+        <activity android:name=".QuanLyUserActivity" />
+        <activity android:name=".QuanLyNhanVienActivity" />
+        <activity android:name=".NhaCungCapActivity"/>
+        <activity android:name=".ThemUserActivity"/>
+
+        <!-- 📁 FileProvider để lưu Excel -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 📩 Receiver SMS -->
+        <receiver
+            android:name=".SmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ⚡ Receiver cắm/rút sạc -->
+        <receiver
+            android:name=".PowerStateChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

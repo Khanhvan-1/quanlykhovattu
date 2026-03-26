@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottomsheet">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Chọn nhà cung cấp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_supplier"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <!-- SEARCH -->
+    <EditText
+        android:id="@+id/edtSearchNCC"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Tìm kiếm..."
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_input"/>
+
+    <!-- DANH SÁCH -->
+    <ListView
+        android:id="@+id/listNCCBottom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

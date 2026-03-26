@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Thanh tiêu đề -->
+    <TextView
+        android:text="Quản lý người dùng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Ô tìm kiếm -->
+    <EditText
+        android:id="@+id/edtSearchUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm theo tên hoặc email..."
+        android:background="@drawable/bg_card"
+        android:padding="12dp"
+        android:textColor="@color/purple_700"
+        android:textColorHint="@color/blue_700"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Danh sách người dùng -->
+    <ListView
+        android:id="@+id/lvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/purple_700"
+        android:dividerHeight="4dp"
+        android:padding="4dp"/>
+
+    <!-- Nút thêm -->
+    <Button
+        android:id="@+id/btnThemNguoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Thêm người dùng"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="12dp"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Nút đăng xuất -->
+    <Button
+        android:id="@+id/btnDangXuatAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚪 Đăng xuất"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pastel_purple"
+        android:layout_marginTop="12dp"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

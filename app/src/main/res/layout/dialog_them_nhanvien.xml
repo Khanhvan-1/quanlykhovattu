@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- 🧍‍♂️ Tên nhân viên -->
+        <EditText
+            android:id="@+id/edtTenNV"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Tên nhân viên"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 🚻 Giới tính -->
+        <Spinner
+            android:id="@+id/spnGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:entries="@array/gender_array"
+            android:padding="8dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 🎂 Tuổi -->
+        <EditText
+            android:id="@+id/edtTuoi"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Tuổi"
+            android:inputType="number"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 🧰 Chức vụ -->
+        <Spinner
+            android:id="@+id/spnChucVu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:entries="@array/chucvu_array"
+            android:padding="8dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 📧 Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 🔑 Mật khẩu (ẩn khi Sửa nếu muốn) -->
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>
